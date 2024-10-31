@@ -10,7 +10,7 @@ If doing a "yum list ; echo "STATUS=$?" results in a STATUS=1, then you're broke
 Watch [this video](https://go.vacr.io/fix-centos7-video) for more info.
 Run this one liner as root to fix your system:
 ```
-# source < <(curl -Ls go.vacr.io/fix-centos7-yum)
+# source <(curl -Ls go.vacr.io/fix-centos7-yum)
 ```
 
 > WARNING: The script will disable/delete ALL repos (other than Vault). If you have things like google-chrome or other repos running out of /etc/yup.repos.d/, then you might want to backup all of /etc/yum/yum.repos.d/ before running this sledge-hammer of a little hack-script. You have been warned.
@@ -30,7 +30,7 @@ If the end result shows STATUS=0, then you're good to go.
 Peek at the script before running it, but it should be able to be automatically pulled in and executed from the command line like this (run as root):
 ```
 $ sudo su -
-# source < <(curl -Ls go.vacr.io/fix-centos7-yum)
+# source <(curl -Ls go.vacr.io/fix-centos7-yum)
 ```
 
 Don't come crying to me if this script damages your system. You shouldn't run system level scripts as root without peeking inside and groking exactly what the script is doing. Suck it up.
