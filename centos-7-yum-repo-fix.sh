@@ -14,7 +14,7 @@ echo
 yum list ; echo "STATUS=$?"
 echo "If STATUS=1, then yum is broken and needs this fix-script..."
 echo "If STATUS=0, then it is fine and I recommend"
-echo "hitting CTRL-C and aborting this script..."
+echo "hitting CTRL-C and aborting this script."
 echo "... hit enter if you are sure you want to contine..."
 ## Pauses for human input (ENTER to run.. CTRL-C to abort)
 ## Comment out the "read" line if you want to run this script
