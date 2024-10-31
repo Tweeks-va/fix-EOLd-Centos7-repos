@@ -9,7 +9,7 @@ Running my script here as root will make the Vault repo your default repo, and d
 
 > NOTE: This is not a "fix".  When run as root, the script will disable ALL repos (other than Vault), so use with caution.  If you have things like google-chrome or other repos running out of /etc/yup.repos.d/, then you might want to back those up before running my dangerous little hack-script.
 
-My script essentally:
+[My script](https://raw.githubusercontent.com/Tweeks-va/fix-EOLd-Centos7-repos/refs/heads/main/centos-7-yum-repo-fix.sh) essentally:
 * Preserves the Vault repo.
 * Deletes all other repos.
 * Enables the Vault C7.8.2003-* repos (all fo them), and then
