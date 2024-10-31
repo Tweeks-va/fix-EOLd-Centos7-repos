@@ -27,7 +27,7 @@ This is not a long term solution.  CentOS7 is still EOLd and will not be getting
 
 If the end result shows STATUS=0, then you're good to go.
 
-Peek at the script before running it, but it should be able to be automatically pulled in and executed from the command line list this (run as root):
+Peek at the script before running it, but it should be able to be automatically pulled in and executed from the command line like this (run as root):
 ```
 $ sudo su -
 # source < <(curl -Ls go.vacr.io/fix-centos7-yum)
