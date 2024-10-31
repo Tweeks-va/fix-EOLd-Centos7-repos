@@ -23,7 +23,7 @@ read x
 if [ -f /etc/yum.repos.d/CentOS-Vault.repo ]; then
 	cd /etc/yum.repos.d/
 	chattr +i CentOS-Vault.repo
-	## Nuke it from space. It's the only way to be sure.. ;)
+	## Nuke it from space. It's the only way to be sure.. Xv)
 	/bin/rm *
 	chattr -i CentOS-Vault.repo
 	yum-config-manager --enable C7.8.2003-*
