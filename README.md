@@ -8,9 +8,9 @@ If doing a "yum list ; echo "STATUS=$?" results in a STATUS=1, then you're broke
 ## TL;DR
 
 Watch [this video](https://go.vacr.io/fix-centos7-video) for more info.
-Run this as root to fix your system:
+Run this one liner as root to fix your system:
 ```
-source < <(curl -Ls go.vacr.io/fix-centos7-yum)
+# source < <(curl -Ls go.vacr.io/fix-centos7-yum)
 ```
 
 > WARNING: The script will disable/delete ALL repos (other than Vault). If you have things like google-chrome or other repos running out of /etc/yup.repos.d/, then you might want to backup all of /etc/yum/yum.repos.d/ before running this sledge-hammer of a little hack-script. You have been warned.
