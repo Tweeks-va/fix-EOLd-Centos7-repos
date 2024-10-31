@@ -9,6 +9,7 @@ If doing a "yum list ; echo "STATUS=$?" results in a STATUS=1, then you're broke
 
 Watch [this video](https://go.vacr.io/fix-centos7-video) for more info.
 Run this as root to fix your system:
+
 '''
 source < <(curl -Ls go.vacr.io/fix-centos7-yum)
 '''
@@ -28,6 +29,7 @@ This is not a long term solution.  CentOS7 is still EOLd and will not be getting
 If the end result shows STATUS=0, then you're good to go.
 
 Peek at the script before running it, but it should be able to be automatically pulled in and executed from the command line list this (run as root):
+
 '''
 $ sudo su -
 # source < <(curl -Ls go.vacr.io/fix-centos7-yum)
