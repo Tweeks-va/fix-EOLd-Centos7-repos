@@ -7,7 +7,16 @@ If doing a "yum list ; echo "STATUS=$?" results in a STATUS=1, then you're broke
 
 Running my script here as root will make the Vault repo your default repo, and delete all other repos.
 
-> NOTE: This is not a "fix".  When run as root, the script will disable ALL repos (other than Vault), so use with caution.  If you have things like google-chrome or other repos running out of /etc/yup.repos.d/, then you might want to back those up before running my dangerous little hack-script.
+## TL;DR
+
+Watch [this video](https://go.vacr.io/fix-centos7-video)
+
+
+## Details
+
+When run as root, the script will disable ALL repos (other than Vault), so use with caution.  If you have things like google-chrome or other repos running out of /etc/yup.repos.d/, then you might want to back those up before running my dangerous little hack-script.
+
+> NOTE: This scrpt is not a long term solution.. It's a short term "fix" or work around so you can patch your system. CentOS7 is still EOLd and you need to find another distro.
 
 [My script](https://raw.githubusercontent.com/Tweeks-va/fix-EOLd-Centos7-repos/refs/heads/main/centos-7-yum-repo-fix.sh) essentally:
 * Preserves the Vault repo.
