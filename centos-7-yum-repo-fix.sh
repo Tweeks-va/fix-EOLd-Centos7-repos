@@ -27,8 +27,8 @@ if [ -f /etc/yum.repos.d/CentOS-Vault.repo ]; then
 	chattr -i CentOS-Vault.repo
 	yum-config-manager --enable C7.8.2003-*
 	yum list ; echo "STATUS=$?"
-	cd -
- else
+	cd - > /dev/null
+else
  	echo "ERROR: CentOS-Vault.repo not found.. aborting."
   	exit 1
 fi
