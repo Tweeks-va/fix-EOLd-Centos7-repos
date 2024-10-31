@@ -12,7 +12,7 @@ echo
 echo
 ## Show yum list status.. 
 yum list ; echo "STATUS=$?"
-echo "If STATUS=1, then yum is broken and needs this fix-script."
+echo "If STATUS=1, then yum is broken and needs this fix-script..."
 echo "If STATUS=0, then it is fine and I recommend"
 echo "hitting CTRL-C and aborting this script..."
 echo "... hit enter if you are sure you want to contine..."
@@ -27,7 +27,12 @@ if [ -f /etc/yum.repos.d/CentOS-Vault.repo ]; then
 	/bin/rm *
 	chattr -i CentOS-Vault.repo
 	yum-config-manager --enable C7.8.2003-*
-	yum list ; echo "STATUS=$?"
+	yum list ; export STATUS=$?; echo "STATUS=$STATUS"
+ 	if [[ $STATUS == "0" ]];then
+  		echo "GOOD TO GO!"
+    	else
+     		echo "Your system still has some sort of issue.. Contact Support."
+       	fi
 	cd - > /dev/null
 else
  	echo "ERROR: CentOS-Vault.repo not found.. aborting."
