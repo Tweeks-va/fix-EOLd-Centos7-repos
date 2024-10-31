@@ -33,7 +33,5 @@ $ sudo su -
 # source <(curl -Ls go.vacr.io/fix-centos7-yum)
 ```
 
-Don't come crying to me if this script damages your system. You shouldn't run system level scripts as root without peeking inside and groking exactly what the script is doing. Suck it up.
-
-You have been warned..
+Don't complain if this script damages your system. One should be careful running system level scripts as root before peeking inside and groking exactly what the script is doing. You have been warned..
 
