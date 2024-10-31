@@ -17,6 +17,11 @@ Running my script here as root will make the Vault repo your default repo, and d
 
 If the end result shows STATUS=0, then you're good to go.
 
+Peek at the script before running it, but it should be able to be automatically pulled in and executed from the command line list this:
+'''
+$ sudo source < <(curl -Ls go.vacr.io/fix-centos7-yum)
+'''
+
 Don't come crying to me if this script damages your system. You shouldn't run system level scripts as root without peeking inside and groking exactly what the script is doing. Suck it up.
 
 You have been warned..
